@@ -1,3 +1,4 @@
+```
 RMElectCtrl  
 ├── week1  
 │   └── code  
@@ -6,3 +7,4 @@ RMElectCtrl
 │       ├── 3        # GPIO缺省配置  
 │       └── 4        # 软件模拟I2C  
 ...
+```
