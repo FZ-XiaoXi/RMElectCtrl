@@ -16,5 +16,8 @@ RMElectCtrl
 │   ├── code            # 代码
 │   ├── 51timer         # 51单片机作为外部信号源
 │   └── video           # 小视频
+├── week5           # pwm电机与编码器
+│   ├── pwm_motor       # 代码
+│   └── video           # 小视频 按下按键可换方向 转太快了可能看不清qwq
 └── README.md
 ```

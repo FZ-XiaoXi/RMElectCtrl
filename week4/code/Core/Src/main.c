@@ -20,7 +20,7 @@
 #include "main.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <stdio.h>
+		#include		 <stdio.h>
 #include <string.h>
 /* USER CODE END Includes */
 
@@ -53,6 +53,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_TIM4_Init(void);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */

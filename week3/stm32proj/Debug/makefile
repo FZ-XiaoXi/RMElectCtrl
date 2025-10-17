@@ -60,8 +60,8 @@ all: main-build
 main-build: LEDButton.elf secondary-outputs
 
 # Tool invocations
-LEDButton.elf LEDButton.map: $(OBJS) $(USER_OBJS) E:\RM\RMElectCtrl\week2\stm32proj\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LEDButton.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\RM\RMElectCtrl\week2\stm32proj\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDButton.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+LEDButton.elf LEDButton.map: $(OBJS) $(USER_OBJS) E:\RM\RMElectCtrl\week3\stm32proj\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "LEDButton.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\RM\RMElectCtrl\week3\stm32proj\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDButton.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
