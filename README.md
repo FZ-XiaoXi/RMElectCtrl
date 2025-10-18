@@ -19,5 +19,8 @@ RMElectCtrl
 ├── week5           # pwm电机与编码器
 │   ├── pwm_motor       # 代码
 │   └── video           # 小视频 按下按键可换方向 转太快了可能看不清qwq
+├── week6           # pid电机
+│   ├── PID_Motor       # 代码
+│   └── video           # 小视频 按下按键换速度 换了个慢点的电机qwq
 └── README.md
 ```
