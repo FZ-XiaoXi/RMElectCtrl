@@ -37,7 +37,7 @@
 #define ENCODER_MAX 65536
 #define Pk 6.5
 #define Ik 4
-#define Dk 8
+#define Dk 2
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
