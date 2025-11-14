@@ -10,40 +10,56 @@ void SendData(uint8_t Data);
 void Start(void){
     SCL_High();
     SDA_High(); //初始化
+    Delay(5);
     SDA_Low();  //拉低DATA开始
+    Delay(5);
     SCL_Low();
+    Delay(5);
 }
 void SendByte(uint8_t Data){//应该是高位在前
     for(uint8_t i=0;i<8;i++){
         bool D=Data>>(7-i)&1;
         if(D){
             SDA_High();
+            Delay(5);
             SCL_High();
+            Delay(5);
             SCL_Low();
+            Delay(5);
         }else{
             SDA_Low();
+            Delay(5);
             SCL_High();
+            Delay(5);
             SCL_Low();
+            Delay(5);
         }
     }
 }
 bool ReceiveAck(void){
     SDA_High();         //释放SDA使得从机可以下拉
+    Delay(5);
     SCL_High();         //第九CLK
+    Delay(5);
     if(SDA_Read()){
         //NACK
         SCL_Low();
+        Delay(5);
         return 0;
     }else{
         //ACK
         SCL_Low();
+        Delay(5);
         return 1;
     }
 }
 void Stop(void){
     SCL_Low();
+    Delay(5);
     SCL_High();
+    Delay(5);
     SDA_High();
+    Delay(5);
 }
 void SendData(uint8_t Data){
     Start();
